@@ -76,7 +76,7 @@ switch chipfamily {
     "stm32f1" => {
         target = "thumbv7m-none-eabi";
         hal = "stm32f1xx-hal";
-        hal_version = "0.10.0";
+        hal_version = "0.11.0";
         switch chipserie {
             "stm32f100" => {
                 ram = switch flash {
@@ -180,7 +180,7 @@ switch chipfamily {
     "stm32f4" => {
         target = "thumbv7em-none-eabihf";
         hal = "stm32f4xx-hal";
-        hal_version = "0.20.0";
+        hal_version = "0.23.0";
         switch chipserie {
             "stm32f401" => {
                 ram = switch flash {
@@ -228,7 +228,7 @@ switch chipfamily {
     "stm32f7" => {
         target = "thumbv7em-none-eabihf";
         hal = "stm32f7xx-hal";
-        hal_version = "0.7.0";
+        hal_version = "0.8.0";
         switch chipserie {
             "stm32f722" | "stm32f723" | "stm32f730" | "stm32f732" | "stm32f733" => {
                 ram = 176+16;
@@ -269,7 +269,7 @@ switch chipfamily {
         ram4_address = 0x38000000;
         backup_address = 0x38800000;
         has_defmt_feature = true;
-        
+
     }*/
     "stm32g0" => {
         target = "thumbv6m-none-eabi";
@@ -296,7 +296,7 @@ switch chipfamily {
         target = "thumbv7em-none-eabihf";
         hal = "stm32g4xx-hal";
         version_type = "git"; // not released yet
-        hal_version = "0.0.1";
+        hal_version = "0.0.2";
         switch chipserie {
             "stm32g431" | "stm32g441"  => {
                 ram = 16+6+10;
