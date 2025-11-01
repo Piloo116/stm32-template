@@ -14,6 +14,7 @@ let flash_address = "0x08000000";
 let itcm_axi_address = "0x24020000";  //temp h7
 let axi_address = "0x24000000";  // temp h7
 let ram4_address = "0x38000000";  // temp h7
+let backup_address = 0x38800000;  // temph7
 let flash_lit = chip[10];
 let flash = switch flash_lit.to_upper() {
     '3' => 8,
