@@ -248,7 +248,7 @@ switch chipfamily {
         backupram = 4;
         rtic_feature = "rtic";
     }
-    /*"stm32h7" => {
+    "stm32h7" => {
         target = "thumbv7em-none-eabihf";
         hal = "stm32h7xx-hal";
         hal_version = "0.15.1";
@@ -270,7 +270,7 @@ switch chipfamily {
         backup_address = 0x38800000;
         has_defmt_feature = true;
 
-    }*/
+    }
     "stm32g0" => {
         target = "thumbv6m-none-eabi";
         hal = "stm32g0xx-hal";
