@@ -11,6 +11,9 @@ let ccram_address = "0x10000000";
 let itcm_address = "0x00000000";
 let dtcm_address = 0x20000000;
 let flash_address = "0x08000000";
+let itcm_axi_address = "0x24020000";  //temp h7
+axi_address = "0x24000000";  // temp h7
+ram4_address = "0x38000000";  // temp h7
 let flash_lit = chip[10];
 let flash = switch flash_lit.to_upper() {
     '3' => 8,
@@ -40,6 +43,9 @@ let dtcm = 0;
 let itcm = 0;
 let backupram = 0;
 let ram;
+let axi = 128;  // temp h7
+let itcm_axi = 196;  // temp h7
+let ram4 = 16;  // temp h7
 switch chipfamily {
     "stm32f0" => {
         target = "thumbv6m-none-eabi";
